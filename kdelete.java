@@ -16,10 +16,12 @@ public class kdelete {
 		int arr[]=new int[len];
 		int x=len-k;
 		for(int i=len-1;i>=0;i--){
-			arr[i]=number%10;
-			number=number/10;
-			str=str+arr[i];
-			}System.out.println(str);
+		arr[i]=number%10;
+		number=number/10;
+		}
+		for(int i=0;i<len;i++){
+		str=str+arr[i];}
+		System.out.println(str);
 		String l=str.substring(0,x);
 		int del=Integer.parseInt(l);
 		System.out.println(del);
